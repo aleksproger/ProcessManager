@@ -1,0 +1,629 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "signalBridge",
+      "printedName": "signalBridge",
+      "declKind": "Import",
+      "moduleName": "SignalSender"
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "SignalSender"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "SignalSender",
+      "printedName": "SignalSender",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "send",
+          "printedName": "send(_:to:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Int32",
+              "printedName": "Swift.Int32",
+              "usr": "s:s5Int32V"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Int32",
+              "printedName": "Swift.Int32",
+              "usr": "s:s5Int32V"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12SignalSenderAAP4send_2toys5Int32V_AFtF",
+          "mangledName": "$s12SignalSenderAAP4send_2toys5Int32V_AFtF",
+          "moduleName": "SignalSender",
+          "genericSig": "<τ_0_0 where τ_0_0 : SignalSender.SignalSender>",
+          "sugared_genericSig": "<Self where Self : SignalSender.SignalSender>",
+          "protocolReq": true,
+          "reqNewWitnessTableEntry": true,
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Protocol",
+      "usr": "s:12SignalSenderAAP",
+      "mangledName": "$s12SignalSenderAAP",
+      "moduleName": "SignalSender",
+      "declAttributes": [
+        "AccessControl"
+      ]
+    },
+    {
+      "kind": "Import",
+      "name": "Foundation",
+      "printedName": "Foundation",
+      "declKind": "Import",
+      "moduleName": "SignalSender"
+    },
+    {
+      "kind": "Import",
+      "name": "signalBridge",
+      "printedName": "signalBridge",
+      "declKind": "Import",
+      "moduleName": "SignalSender"
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "SignalSenderImpl",
+      "printedName": "SignalSenderImpl",
+      "children": [
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "SignalSenderImpl",
+              "printedName": "SignalSender.SignalSenderImpl",
+              "usr": "s:12SignalSender0aB4ImplC"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "s:12SignalSender0aB4ImplCACycfc",
+          "mangledName": "$s12SignalSender0aB4ImplCACycfc",
+          "moduleName": "SignalSender",
+          "declAttributes": [
+            "AccessControl"
+          ],
+          "init_kind": "Designated"
+        },
+        {
+          "kind": "Function",
+          "name": "send",
+          "printedName": "send(_:to:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Int32",
+              "printedName": "Swift.Int32",
+              "usr": "s:s5Int32V"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "Int32",
+              "printedName": "Swift.Int32",
+              "usr": "s:s5Int32V"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "s:12SignalSender0aB4ImplC4send_2toys5Int32V_AGtF",
+          "mangledName": "$s12SignalSender0aB4ImplC4send_2toys5Int32V_AGtF",
+          "moduleName": "SignalSender",
+          "declAttributes": [
+            "Final",
+            "AccessControl"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "s:12SignalSender0aB4ImplC",
+      "mangledName": "$s12SignalSender0aB4ImplC",
+      "moduleName": "SignalSender",
+      "declAttributes": [
+        "Final",
+        "AccessControl"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "SignalSender",
+          "printedName": "SignalSender",
+          "usr": "s:12SignalSenderAAP",
+          "mangledName": "$s12SignalSenderAAP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "Int32",
+      "printedName": "Int32",
+      "children": [
+        {
+          "kind": "Var",
+          "name": "termination",
+          "printedName": "termination",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int32",
+              "printedName": "Swift.Int32",
+              "usr": "s:s5Int32V"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:s5Int32V12SignalSenderE11terminationABvpZ",
+          "mangledName": "$ss5Int32V12SignalSenderE11terminationABvpZ",
+          "moduleName": "SignalSender",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int32",
+                  "printedName": "Swift.Int32",
+                  "usr": "s:s5Int32V"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:s5Int32V12SignalSenderE11terminationABvgZ",
+              "mangledName": "$ss5Int32V12SignalSenderE11terminationABvgZ",
+              "moduleName": "SignalSender",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        },
+        {
+          "kind": "Var",
+          "name": "kill",
+          "printedName": "kill",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Int32",
+              "printedName": "Swift.Int32",
+              "usr": "s:s5Int32V"
+            }
+          ],
+          "declKind": "Var",
+          "usr": "s:s5Int32V12SignalSenderE4killABvpZ",
+          "mangledName": "$ss5Int32V12SignalSenderE4killABvpZ",
+          "moduleName": "SignalSender",
+          "static": true,
+          "declAttributes": [
+            "HasInitialValue",
+            "HasStorage",
+            "AccessControl"
+          ],
+          "isLet": true,
+          "hasStorage": true,
+          "accessors": [
+            {
+              "kind": "Accessor",
+              "name": "Get",
+              "printedName": "Get()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int32",
+                  "printedName": "Swift.Int32",
+                  "usr": "s:s5Int32V"
+                }
+              ],
+              "declKind": "Accessor",
+              "usr": "s:s5Int32V12SignalSenderE4killABvgZ",
+              "mangledName": "$ss5Int32V12SignalSenderE4killABvgZ",
+              "moduleName": "SignalSender",
+              "static": true,
+              "implicit": true,
+              "declAttributes": [
+                "Transparent"
+              ],
+              "accessorKind": "get"
+            }
+          ]
+        }
+      ],
+      "declKind": "Struct",
+      "usr": "s:s5Int32V",
+      "mangledName": "$ss5Int32V",
+      "moduleName": "Swift",
+      "declAttributes": [
+        "Frozen"
+      ],
+      "isExternal": true,
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "FixedWidthInteger",
+          "printedName": "FixedWidthInteger",
+          "usr": "s:s17FixedWidthIntegerP",
+          "mangledName": "$ss17FixedWidthIntegerP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "SignedInteger",
+          "printedName": "SignedInteger",
+          "usr": "s:SZ",
+          "mangledName": "$sSZ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_ExpressibleByBuiltinIntegerLiteral",
+          "printedName": "_ExpressibleByBuiltinIntegerLiteral",
+          "usr": "s:s35_ExpressibleByBuiltinIntegerLiteralP",
+          "mangledName": "$ss35_ExpressibleByBuiltinIntegerLiteralP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "BinaryInteger",
+          "printedName": "BinaryInteger",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Words",
+              "printedName": "Words",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Words",
+                  "printedName": "Swift.Int32.Words",
+                  "usr": "s:s5Int32V5WordsV"
+                }
+              ]
+            }
+          ],
+          "usr": "s:Sz",
+          "mangledName": "$sSz"
+        },
+        {
+          "kind": "Conformance",
+          "name": "LosslessStringConvertible",
+          "printedName": "LosslessStringConvertible",
+          "usr": "s:s25LosslessStringConvertibleP",
+          "mangledName": "$ss25LosslessStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "SignedNumeric",
+          "printedName": "SignedNumeric",
+          "usr": "s:s13SignedNumericP",
+          "mangledName": "$ss13SignedNumericP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Numeric",
+          "printedName": "Numeric",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Magnitude",
+              "printedName": "Magnitude",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "UInt32",
+                  "printedName": "Swift.UInt32",
+                  "usr": "s:s6UInt32V"
+                }
+              ]
+            }
+          ],
+          "usr": "s:Sj",
+          "mangledName": "$sSj"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Strideable",
+          "printedName": "Strideable",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "Stride",
+              "printedName": "Stride",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int",
+                  "printedName": "Swift.Int",
+                  "usr": "s:Si"
+                }
+              ]
+            }
+          ],
+          "usr": "s:Sx",
+          "mangledName": "$sSx"
+        },
+        {
+          "kind": "Conformance",
+          "name": "AdditiveArithmetic",
+          "printedName": "AdditiveArithmetic",
+          "usr": "s:s18AdditiveArithmeticP",
+          "mangledName": "$ss18AdditiveArithmeticP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "ExpressibleByIntegerLiteral",
+          "printedName": "ExpressibleByIntegerLiteral",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "IntegerLiteralType",
+              "printedName": "IntegerLiteralType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int32",
+                  "printedName": "Swift.Int32",
+                  "usr": "s:s5Int32V"
+                }
+              ]
+            }
+          ],
+          "usr": "s:s27ExpressibleByIntegerLiteralP",
+          "mangledName": "$ss27ExpressibleByIntegerLiteralP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Comparable",
+          "printedName": "Comparable",
+          "usr": "s:SL",
+          "mangledName": "$sSL"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Decodable",
+          "printedName": "Decodable",
+          "usr": "s:Se",
+          "mangledName": "$sSe"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Encodable",
+          "printedName": "Encodable",
+          "usr": "s:SE",
+          "mangledName": "$sSE"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomReflectable",
+          "printedName": "CustomReflectable",
+          "usr": "s:s17CustomReflectableP",
+          "mangledName": "$ss17CustomReflectableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_CustomPlaygroundQuickLookable",
+          "printedName": "_CustomPlaygroundQuickLookable",
+          "usr": "s:s30_CustomPlaygroundQuickLookableP",
+          "mangledName": "$ss30_CustomPlaygroundQuickLookableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_HasCustomAnyHashableRepresentation",
+          "printedName": "_HasCustomAnyHashableRepresentation",
+          "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+          "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Sendable",
+          "printedName": "Sendable",
+          "usr": "s:s8SendableP",
+          "mangledName": "$ss8SendableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "SIMDScalar",
+          "printedName": "SIMDScalar",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "SIMDMaskScalar",
+              "printedName": "SIMDMaskScalar",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int32",
+                  "printedName": "Swift.Int32",
+                  "usr": "s:s5Int32V"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "SIMD2Storage",
+              "printedName": "SIMD2Storage",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SIMD2Storage",
+                  "printedName": "Swift.Int32.SIMD2Storage",
+                  "usr": "s:s5Int32V12SIMD2StorageV"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "SIMD4Storage",
+              "printedName": "SIMD4Storage",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SIMD4Storage",
+                  "printedName": "Swift.Int32.SIMD4Storage",
+                  "usr": "s:s5Int32V12SIMD4StorageV"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "SIMD8Storage",
+              "printedName": "SIMD8Storage",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SIMD8Storage",
+                  "printedName": "Swift.Int32.SIMD8Storage",
+                  "usr": "s:s5Int32V12SIMD8StorageV"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "SIMD16Storage",
+              "printedName": "SIMD16Storage",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SIMD16Storage",
+                  "printedName": "Swift.Int32.SIMD16Storage",
+                  "usr": "s:s5Int32V13SIMD16StorageV"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "SIMD32Storage",
+              "printedName": "SIMD32Storage",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SIMD32Storage",
+                  "printedName": "Swift.Int32.SIMD32Storage",
+                  "usr": "s:s5Int32V13SIMD32StorageV"
+                }
+              ]
+            },
+            {
+              "kind": "TypeWitness",
+              "name": "SIMD64Storage",
+              "printedName": "SIMD64Storage",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "SIMD64Storage",
+                  "printedName": "Swift.Int32.SIMD64Storage",
+                  "usr": "s:s5Int32V13SIMD64StorageV"
+                }
+              ]
+            }
+          ],
+          "usr": "s:s10SIMDScalarP",
+          "mangledName": "$ss10SIMDScalarP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_ObjectiveCBridgeable",
+          "printedName": "_ObjectiveCBridgeable",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "_ObjectiveCType",
+              "printedName": "_ObjectiveCType",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "NSNumber",
+                  "printedName": "Foundation.NSNumber",
+                  "usr": "c:objc(cs)NSNumber"
+                }
+              ]
+            }
+          ],
+          "usr": "s:s21_ObjectiveCBridgeableP",
+          "mangledName": "$ss21_ObjectiveCBridgeableP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_FormatSpecifiable",
+          "printedName": "_FormatSpecifiable",
+          "children": [
+            {
+              "kind": "TypeWitness",
+              "name": "_Arg",
+              "printedName": "_Arg",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Int32",
+                  "printedName": "Swift.Int32",
+                  "usr": "s:s5Int32V"
+                }
+              ]
+            }
+          ],
+          "usr": "s:10Foundation18_FormatSpecifiableP",
+          "mangledName": "$s10Foundation18_FormatSpecifiableP"
+        }
+      ]
+    }
+  ],
+  "json_format_version": 6
+}

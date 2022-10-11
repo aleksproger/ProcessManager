@@ -1,0 +1,103 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.SignalSender-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "importPath" : "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alex/Developer/Learning/SignalSenderPackage/Sources/SignalSender/Int32+Signals.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alex/Developer/Learning/SignalSenderPackage/Sources/SignalSender/SignalSender.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alex/Developer/Learning/SignalSenderPackage/Sources/SignalSender/SignalSenderImpl.swift"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SignalSender",
+      "moduleOutputPath" : "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.swiftmodule",
+      "objects" : [
+        "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/Int32+Signals.swift.o",
+        "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/SignalSender.swift.o",
+        "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/SignalSenderImpl.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.10",
+        "-swift-version",
+        "5",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-g",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/Users/alex/Developer/Learning/SignalSenderPackage/Sources/signalBridge/module.modulemap",
+        "-module-cache-path",
+        "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/SignalSender-Swift.h",
+        "-color-diagnostics",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib"
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/Int32+Signals.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/SignalSender.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/SignalSenderImpl.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.swiftmodule"
+        }
+      ],
+      "sources" : [
+        "/Users/alex/Developer/Learning/SignalSenderPackage/Sources/SignalSender/Int32+Signals.swift",
+        "/Users/alex/Developer/Learning/SignalSenderPackage/Sources/SignalSender/SignalSender.swift",
+        "/Users/alex/Developer/Learning/SignalSenderPackage/Sources/SignalSender/SignalSenderImpl.swift"
+      ],
+      "tempsPath" : "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

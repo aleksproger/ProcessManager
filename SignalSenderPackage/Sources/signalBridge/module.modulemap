@@ -1,0 +1,5 @@
+module signalBridge {
+    header "signalBridge.h"
+    link "signalBridge"
+    export *
+}

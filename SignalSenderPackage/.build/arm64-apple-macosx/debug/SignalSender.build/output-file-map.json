@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/master.swiftdeps"
+  },
+  "/Users/alex/Developer/Learning/SignalSenderPackage/Sources/SignalSender/Int32+Signals.swift": {
+    "dependencies": "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/Int32+Signals.d",
+    "object": "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/Int32+Signals.swift.o",
+    "swiftmodule": "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/Int32+Signals~partial.swiftmodule",
+    "swift-dependencies": "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/Int32+Signals.swiftdeps"
+  },
+  "/Users/alex/Developer/Learning/SignalSenderPackage/Sources/SignalSender/SignalSender.swift": {
+    "dependencies": "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/SignalSender.d",
+    "object": "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/SignalSender.swift.o",
+    "swiftmodule": "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/SignalSender~partial.swiftmodule",
+    "swift-dependencies": "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/SignalSender.swiftdeps"
+  },
+  "/Users/alex/Developer/Learning/SignalSenderPackage/Sources/SignalSender/SignalSenderImpl.swift": {
+    "dependencies": "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/SignalSenderImpl.d",
+    "object": "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/SignalSenderImpl.swift.o",
+    "swiftmodule": "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/SignalSenderImpl~partial.swiftmodule",
+    "swift-dependencies": "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/SignalSenderImpl.swiftdeps"
+  }
+}

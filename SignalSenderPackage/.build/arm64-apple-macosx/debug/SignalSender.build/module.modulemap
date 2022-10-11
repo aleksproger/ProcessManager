@@ -1,0 +1,4 @@
+module SignalSender {
+    header "/Users/alex/Developer/Learning/SignalSenderPackage/.build/arm64-apple-macosx/debug/SignalSender.build/SignalSender-Swift.h"
+    requires objc
+}

@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug rdConsoleSequencerClient",
+            "program": "${workspaceFolder:rdConsoleSequencerClient}/.build/debug/rdConsoleSequencerClient",
+            "args": [],
+            "cwd": "${workspaceFolder:rdConsoleSequencerClient}",
+            "preLaunchTask": "swift: Build Debug rdConsoleSequencerClient"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release rdConsoleSequencerClient",
+            "program": "${workspaceFolder:rdConsoleSequencerClient}/.build/release/rdConsoleSequencerClient",
+            "args": [],
+            "cwd": "${workspaceFolder:rdConsoleSequencerClient}",
+            "preLaunchTask": "swift: Build Release rdConsoleSequencerClient"
+        }
+    ]
+}

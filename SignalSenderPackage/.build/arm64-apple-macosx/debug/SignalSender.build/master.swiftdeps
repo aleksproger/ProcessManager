@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)"
+options: "b63d882b95d5d1f6e6a3e449e2316458a0d269e7c180249f9ee635c6e1227c57"
+build_start_time: [1665472146, 62281131]
+build_end_time: [1665472148, 473911046]
+inputs:
+  "/Users/alex/Developer/Learning/SignalSenderPackage/Sources/SignalSender/Int32+Signals.swift": [1665256130, 448445796]
+  "/Users/alex/Developer/Learning/SignalSenderPackage/Sources/SignalSender/SignalSender.swift": [1665471974, 431177854]
+  "/Users/alex/Developer/Learning/SignalSenderPackage/Sources/SignalSender/SignalSenderImpl.swift": [1665471966, 900379180]

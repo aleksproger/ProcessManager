@@ -1,0 +1,76 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug rdConsoleSequencer",
+            "program": "${workspaceFolder:rdConsoleSequencer}/.build/debug/rdConsoleSequencer",
+            "args": [],
+            "cwd": "${workspaceFolder:rdConsoleSequencer}",
+            "preLaunchTask": "swift: Build Debug rdConsoleSequencer"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release rdConsoleSequencer",
+            "program": "${workspaceFolder:rdConsoleSequencer}/.build/release/rdConsoleSequencer",
+            "args": [],
+            "cwd": "${workspaceFolder:rdConsoleSequencer}",
+            "preLaunchTask": "swift: Build Release rdConsoleSequencer"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug ProcessKiller",
+            "program": "${workspaceFolder:ProcessKillerXPC}/.build/debug/ProcessKiller",
+            "args": [],
+            "cwd": "${workspaceFolder:ProcessKillerXPC}",
+            "preLaunchTask": "swift: Build Debug ProcessKiller"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release ProcessKiller",
+            "program": "${workspaceFolder:ProcessKillerXPC}/.build/release/ProcessKiller",
+            "args": [],
+            "cwd": "${workspaceFolder:ProcessKillerXPC}",
+            "preLaunchTask": "swift: Build Release ProcessKiller"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug ProcessKillerXPCService",
+            "program": "${workspaceFolder:ProcessKillerXPC}/.build/debug/ProcessKillerXPCService",
+            "args": [],
+            "cwd": "${workspaceFolder:ProcessKillerXPC}",
+            "preLaunchTask": "swift: Build Debug ProcessKillerXPCService"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release ProcessKillerXPCService",
+            "program": "${workspaceFolder:ProcessKillerXPC}/.build/release/ProcessKillerXPCService",
+            "args": [],
+            "cwd": "${workspaceFolder:ProcessKillerXPC}",
+            "preLaunchTask": "swift: Build Release ProcessKillerXPCService"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug ProcessKillerXPC",
+            "program": "${workspaceFolder:ProcessKillerXPC}/.build/debug/ProcessKillerXPC",
+            "args": [],
+            "cwd": "${workspaceFolder:ProcessKillerXPC}",
+            "preLaunchTask": "swift: Build Debug ProcessKillerXPC"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release ProcessKillerXPC",
+            "program": "${workspaceFolder:ProcessKillerXPC}/.build/release/ProcessKillerXPC",
+            "args": [],
+            "cwd": "${workspaceFolder:ProcessKillerXPC}",
+            "preLaunchTask": "swift: Build Release ProcessKillerXPC"
+        }
+    ]
+}
