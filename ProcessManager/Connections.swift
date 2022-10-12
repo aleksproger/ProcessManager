@@ -8,21 +8,28 @@
 import ProcessManagerCore
 import Foundation
 import ProcessListToAppShared
+import ProcessKillerToAppShared
 
 enum Connections {
-  static let processKillerConnection: XPCConnection = {
+  static func processKillerConnection(errorHandler: ErrorHandler) -> XPCConnection {
     let killerServiceConnection = NSXPCConnection(
-      machServiceName: Constants.processKillerLabel
+      machServiceName: ProcessKillerToAppShared.Constants.processKillerMachName
     )
     return DefaultXPCConnection(connection: killerServiceConnection) { connection in
       connection.remoteObjectInterface = NSXPCInterface(with: ProcessKillerXPC.self)
+      connection.exportedInterface = NSXPCInterface(with: ProcessKillerHostProtocol.self)
+      connection.exportedObject = ProcessKillerHostProtocolImpl(errorHandler: errorHandler)
     }
     .logging()
-  }()
+  }
   
   
-  static let processListConnection: XPCConnection = {
-    let listServiceConnection = NSXPCConnection(serviceName: Constants.processListLabel)
+  static func processListConnection(
+    errorHandler: ErrorHandler
+  ) -> XPCConnection {
+    let listServiceConnection = NSXPCConnection(
+      serviceName: Constants.processListLabel
+    )
     
     return DefaultXPCConnection(connection: listServiceConnection) { connection in
       let interface = NSXPCInterface(with: ProcessListXPC.self)
@@ -47,7 +54,9 @@ enum Connections {
       )
       
       connection.remoteObjectInterface = interface
+      connection.exportedInterface = NSXPCInterface(with: ProcessKillerHostProtocol.self)
+      connection.exportedObject = ProcessKillerHostProtocolImpl(errorHandler: errorHandler)
     }
     .logging()
-  }()
+  }
 }

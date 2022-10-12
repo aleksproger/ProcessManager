@@ -17,7 +17,7 @@
                BlueprintIdentifier = "FAEE969228F2E06C00DA21E1"
                BuildableName = "com.alex.ProcessKillerXPCService"
                BlueprintName = "com.alex.ProcessKillerXPCService"
-               ReferencedContainer = "container:rdConsoleSequencerClient.xcodeproj">
+               ReferencedContainer = "container:ProcessManager.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "FAEE969228F2E06C00DA21E1"
             BuildableName = "com.alex.ProcessKillerXPCService"
             BlueprintName = "com.alex.ProcessKillerXPCService"
-            ReferencedContainer = "container:rdConsoleSequencerClient.xcodeproj">
+            ReferencedContainer = "container:ProcessManager.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "FAEE969228F2E06C00DA21E1"
             BuildableName = "com.alex.ProcessKillerXPCService"
             BlueprintName = "com.alex.ProcessKillerXPCService"
-            ReferencedContainer = "container:rdConsoleSequencerClient.xcodeproj">
+            ReferencedContainer = "container:ProcessManager.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -8,7 +8,6 @@
 import Foundation
 
 enum Constants {
-    static let processKillerLabel = "com.alex.ProcessKillerXPCService"
-    static let processListLabel = "com.alex.ProcessListXPCService"
-    static let priveledHelpersDirectory = "/Library/PrivilegedHelperTools/"
+  static let processListLabel = "com.alex.ProcessListXPCService"
+  static let priveledHelpersDirectory = "/Library/PrivilegedHelperTools/"
 }

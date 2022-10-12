@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import ProcessKillerToAppShared
 
 NSLog("XPCDebug: ProcessKillerXPC has strted")
-let listener = NSXPCListener(machServiceName: Constants.listenerMachName)
+let listener = NSXPCListener(machServiceName: Constants.processKillerMachName)
 let delegate = ProcessKillerXPCDelegate()
 listener.delegate = delegate
 listener.resume()

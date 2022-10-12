@@ -8,12 +8,18 @@
 import Foundation
 import Libproc
 import ProcessListToAppShared
+import ProcessManagerCore
 
 final class ProcessListXPCImpl: ProcessListXPC {
   private let libprocWrapper: LibprocWrapper
+  private let errorHandler: ErrorHandler
   
-  init(libProcWrapper: LibprocWrapper) {
+  init(
+    libProcWrapper: LibprocWrapper,
+    errorHandler: ErrorHandler
+  ) {
     self.libprocWrapper = libProcWrapper
+    self.errorHandler = errorHandler
   }
   
   func listAll(
@@ -37,7 +43,7 @@ final class ProcessListXPCImpl: ProcessListXPC {
       }
       reply(processModels)
     } catch {
-      reply([])
+      errorHandler.handle(error)
     }
   }
   

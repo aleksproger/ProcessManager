@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FAEE967128F2CE2F00DA21E1"
-               BuildableName = "ProcessManager.app"
-               BlueprintName = "ProcessManager"
-               ReferencedContainer = "container:rdConsoleSequencerClient.xcodeproj">
+               BlueprintIdentifier = "FA22051128F6ECA1000461EB"
+               BuildableName = "ConnectionSecurity.framework"
+               BlueprintName = "ConnectionSecurity"
+               ReferencedContainer = "container:ProcessManager.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FAEE967128F2CE2F00DA21E1"
-            BuildableName = "ProcessManager.app"
-            BlueprintName = "ProcessManager"
-            ReferencedContainer = "container:rdConsoleSequencerClient.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -57,16 +47,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FAEE967128F2CE2F00DA21E1"
-            BuildableName = "ProcessManager.app"
-            BlueprintName = "ProcessManager"
-            ReferencedContainer = "container:rdConsoleSequencerClient.xcodeproj">
+            BlueprintIdentifier = "FA22051128F6ECA1000461EB"
+            BuildableName = "ConnectionSecurity.framework"
+            BlueprintName = "ConnectionSecurity"
+            ReferencedContainer = "container:ProcessManager.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

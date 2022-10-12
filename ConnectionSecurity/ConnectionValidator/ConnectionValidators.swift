@@ -17,9 +17,10 @@ public enum ConnectionValidators {
     let contextFetcher = SecureContextFetcherImpl(errorHandler: errorHandler)
     
     let policy = CompositePolicy(policies: [
-//      RequirementStringVerificationPolicy(appBundleID: appBundleID, subjectCN: subjectCN),
+      RequirementStringVerificationPolicy(appBundleID: appBundleID, subjectCN: subjectCN),
+      // MARK: - Should be disabled for debug when Hardened Runtime is on, and get-task-allow is true
 //      VulnerableEntitlementsVerificationPolicy(),
-//      HardenedRuntimeVerificationPolicy(),
+      HardenedRuntimeVerificationPolicy(),
     ])
     
     return ConnectionValidatorImpl(

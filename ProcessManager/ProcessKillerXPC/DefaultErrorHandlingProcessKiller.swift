@@ -7,6 +7,7 @@
 
 import Foundation
 import ProcessManagerCore
+import ProcessKillerToAppShared
 
 final class DefaultErrorHandlingProcessKiller: ErrorHandlingProcessKiller {
   enum ProcessKillerError: Error { case unableToKillProcess(Int) }
@@ -27,15 +28,10 @@ final class DefaultErrorHandlingProcessKiller: ErrorHandlingProcessKiller {
   
   func kill(withID: Int) {
     do {
-      try installer.install(label: Constants.processKillerLabel)
+      try installer.install(label: ProcessKillerToAppShared.Constants.processKillerMachName)
       connection.resume()
       let service = try connection.getService(of: ProcessKillerXPC.self).get()
-      service.kill(withID: withID)// { isSuccess in
-//        guard isSuccess else {
-//          self.errorHandler.handle(ProcessKillerError.unableToKillProcess(withID))
-//          return
-//        }
-//      }
+      service.kill(withID: withID)
     } catch {
       errorHandler.handle(error)
     }

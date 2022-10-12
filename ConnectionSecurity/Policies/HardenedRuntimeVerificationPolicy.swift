@@ -33,8 +33,3 @@ final class HardenedRuntimeVerificationPolicy: ConnectionVerificationPolicy {
     return true
   }
 }
-
-fileprivate enum VerificationError: Error {
-  case unableToGetSigningInformation
-  case hardenedRuntimeFlagMissing
-}

@@ -20,11 +20,11 @@ final class DependenciesContainer: ObservableObject {
   lazy var processKiller = DefaultErrorHandlingProcessKiller(
     installer: installer,
     errorHandler: errorHandler,
-    connection: Connections.processKillerConnection
+    connection: Connections.processKillerConnection(errorHandler: errorHandler)
   )
   
   lazy var processList = DefaultProcessListXPC(
-    connection: Connections.processListConnection,
+    connection: Connections.processListConnection(errorHandler: errorHandler),
     errorHandler: errorHandler.handle
   )
   
@@ -34,7 +34,7 @@ final class DependenciesContainer: ObservableObject {
     )
     
     let publisher = IntervalPublisher(
-      interval: 2,
+      interval: 1,
       publisher: publisherAdapter.subject()
     )
     
@@ -51,7 +51,7 @@ final class DependenciesContainer: ObservableObject {
     )
     
     let publisher = IntervalPublisher(
-      interval: 2,
+      interval: 1,
       publisher: publisherAdapter.subject()
     )
     

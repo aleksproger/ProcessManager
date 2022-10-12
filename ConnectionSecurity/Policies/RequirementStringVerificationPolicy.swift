@@ -38,8 +38,3 @@ final class RequirementStringVerificationPolicy: ConnectionVerificationPolicy {
     return true
   }
 }
-
-fileprivate enum VerificationError: Error {
-  case unableToGetRequirementString
-  case requirementStringInvalid
-}

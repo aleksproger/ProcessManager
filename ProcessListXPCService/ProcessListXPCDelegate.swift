@@ -15,10 +15,21 @@ final class ProcessListXPCDelegate: NSObject, NSXPCListenerDelegate {
     shouldAcceptNewConnection newConnection: NSXPCConnection
   ) -> Bool {
     NSLog("XPCDebug: ProcessListXPCDelegate received new connection")
-    newConnection.exportedInterface = NSXPCInterface(with: ProcessListXPC.self)
-    newConnection.exportedObject = ProcessListXPCImpl(libProcWrapper: Libproc.wrapper)
-    newConnection.resume()
+    configure(connection: newConnection)
     NSLog("XPCDebug: ProcessListXPCDelegate will accept new connection")
     return true
+  }
+  
+  private func configure(connection: NSXPCConnection) {
+    let errorHandlerProxy = ProcessListErrorHandlerProxy()
+    connection.exportedInterface = NSXPCInterface(with: ProcessListXPC.self)
+    connection.exportedObject = ProcessListXPCImpl(
+      libProcWrapper: Libproc.wrapper,
+      errorHandler: errorHandlerProxy
+    )
+    connection.remoteObjectInterface = NSXPCInterface(with: ProcessListHostProtocol.self)
+    let hostObject = connection.remoteObjectProxyWithErrorHandler(errorHandlerProxy.handle) as? ProcessListHostProtocol
+    errorHandlerProxy.subject = hostObject
+    connection.resume()
   }
 }

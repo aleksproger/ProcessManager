@@ -42,8 +42,3 @@ final class VulnerableEntitlementsVerificationPolicy: ConnectionVerificationPoli
   }
 }
 
-fileprivate enum VerificationError: Error {
-  case unableToGetSigningInformation
-  case unableToGetEntitlements
-  case vulnerableEntitlementUsed
-}

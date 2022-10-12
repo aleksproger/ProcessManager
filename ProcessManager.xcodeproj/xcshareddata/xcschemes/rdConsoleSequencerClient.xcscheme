@@ -17,7 +17,7 @@
                BlueprintIdentifier = "rdconsolesequencerclient::rdConsoleSequencerClient"
                BuildableName = "rdConsoleSequencerClient"
                BlueprintName = "rdConsoleSequencerClient"
-               ReferencedContainer = "container:rdConsoleSequencerClient.xcodeproj">
+               ReferencedContainer = "container:ProcessManager.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "rdconsolesequencerclient::rdConsoleSequencerClient"
             BuildableName = "rdConsoleSequencerClient"
             BlueprintName = "rdConsoleSequencerClient"
-            ReferencedContainer = "container:rdConsoleSequencerClient.xcodeproj">
+            ReferencedContainer = "container:ProcessManager.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
