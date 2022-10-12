@@ -8,5 +8,6 @@
 import Foundation
 
 @objc public protocol ProcessListXPC {
-    func list(reply: @escaping ([ProcessModel]) -> Void)
+  func listAll(reply: @escaping ([ProcessModel]) -> Void)
+  func listUserOwned(reply: @escaping ([ProcessModel]) -> Void)
 }

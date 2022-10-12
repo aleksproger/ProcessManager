@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ProcessManagerCore
 
 final class InstallationVerifyingPolicy: InstallationPolicy {
     private let fileManager: FileManagerTwin

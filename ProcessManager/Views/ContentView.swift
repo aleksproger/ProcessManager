@@ -10,20 +10,30 @@ import ProcessListToAppShared
 
 struct ContentView: View {
   @EnvironmentObject var dependencies: DependenciesContainer
+  @State var category: CategoryType? = .allProcesses
   
   var body: some View {
     NavigationView {
-      
-      SidebarView(selection: .constant(.processes))
+      SidebarView(selection: $category)
         .frame(width: 200)
       
-      TableView(
-        viewModel: TableVewModel(
-          onProcessTap: dependencies.processKiller.kill(withID:),
-          processesPublished: dependencies.processesPublished.$value
-        )
-      )
-      
+      switch category {
+        case .allProcesses,
+            .none:
+          TableView(
+            viewModel: TableVewModel(
+              onProcessTap: dependencies.processKiller.kill(withID:),
+              processesPublished: dependencies.allProcessesPublished
+            )
+          )
+        case .userOwnedProcesses:
+          TableView(
+            viewModel: TableVewModel(
+              onProcessTap: dependencies.processKiller.kill(withID:),
+              processesPublished: dependencies.userOwnedPublished
+            )
+          )
+      }
     }
     .frame(
       minWidth: 700,

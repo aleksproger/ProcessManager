@@ -5,7 +5,9 @@
 //  Created by Aleksei Sapitskii on 11.10.2022.
 //
 
+import ProcessManagerCore
 import Foundation
+import ProcessListToAppShared
 
 final class DependenciesContainer: ObservableObject {
   lazy var installer = PolicyRegulatedInstaller(
@@ -14,10 +16,10 @@ final class DependenciesContainer: ObservableObject {
   )
   
   lazy var errorHandler = LoggingErrorHandler(subject: DefaultErrorHandler())
-    
-  lazy var processKiller = InstallableProcessKiller(
+  
+  lazy var processKiller = DefaultErrorHandlingProcessKiller(
     installer: installer,
-    errorHandler: errorHandler.handle,
+    errorHandler: errorHandler,
     connection: Connections.processKillerConnection
   )
   
@@ -26,17 +28,36 @@ final class DependenciesContainer: ObservableObject {
     errorHandler: errorHandler.handle
   )
   
-  lazy var processesPublisherAdapter = ProcessesPublisherAdapterImpl(
-    processList: processList
-  )
+  lazy var userOwnedPublished: Published<[ProcessModel]>.Publisher = {
+    let publisherAdapter = UserOwnedProcessesPublisherAdapterImpl(
+      processList: processList
+    )
+    
+    let publisher = IntervalPublisher(
+      interval: 2,
+      publisher: publisherAdapter.subject()
+    )
+    
+    return RemoveDuplicatesPublishedAdapter(
+      defaultValue: [],
+      publisher: publisher.eraseToAnyPublisher()
+    ).$value
+  }()
   
-  lazy var publisher = IntervalPublisher(
-    interval: 2,
-    publisher: ProcessesPublisherAdapterImpl(processList: self.processList).subject()
-  )
   
-  lazy var processesPublished = RemoveDuplicatesPublishedAdapter(
-    defaultValue: [],
-    publisher: publisher.eraseToAnyPublisher()
-  )
+  lazy var allProcessesPublished: Published<[ProcessModel]>.Publisher = {
+    let publisherAdapter = AllProcessesPublisherAdapterImpl(
+      processList: processList
+    )
+    
+    let publisher = IntervalPublisher(
+      interval: 2,
+      publisher: publisherAdapter.subject()
+    )
+    
+    return RemoveDuplicatesPublishedAdapter(
+      defaultValue: [ProcessModel](),
+      publisher: publisher.eraseToAnyPublisher()
+    ).$value
+  }()
 }

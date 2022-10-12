@@ -7,16 +7,15 @@
 
 import Foundation
 import SignalSender
-import Libproc
 
 final class ProcessKillerXPCImpl: ProcessKillerXPC {
-    private let signalSender: SignalSender
+  private let signalSender: SignalSender
     
-    init(signalSender: SignalSender) {
-        self.signalSender = signalSender
-    }
-
-    func kill(withID id: Int) {
-        signalSender.send(.kill, to: Int32(id))
-    }
+  init(signalSender: SignalSender) {
+    self.signalSender = signalSender
+  }
+  
+  func kill(withID id: Int) {
+    _ = signalSender.send(.kill, to: Int32(id))
+  }
 }

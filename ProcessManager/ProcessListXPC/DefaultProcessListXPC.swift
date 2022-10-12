@@ -7,6 +7,7 @@
 
 import Foundation
 import ProcessListToAppShared
+import ProcessManagerCore
 
 final class DefaultProcessListXPC: ProcessListXPC {
   private let connection: XPCConnection
@@ -20,11 +21,21 @@ final class DefaultProcessListXPC: ProcessListXPC {
     self.errorHandler = errorHandler
   }
   
-  func list(reply: @escaping ([ProcessModel]) -> Void) {
+  func listAll(reply: @escaping ([ProcessModel]) -> Void) {
     do {
       connection.resume()
       let service = try connection.getService(of: ProcessListXPC.self).get()
-      service.list(reply: reply)
+      service.listAll(reply: reply)
+    } catch {
+      errorHandler(error)
+    }
+  }
+  
+  func listUserOwned(reply: @escaping ([ProcessModel]) -> Void) {
+    do {
+      connection.resume()
+      let service = try connection.getService(of: ProcessListXPC.self).get()
+      service.listUserOwned(reply: reply)
     } catch {
       errorHandler(error)
     }

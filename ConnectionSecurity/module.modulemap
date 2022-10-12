@@ -1,0 +1,12 @@
+//
+//  module.map.swift
+//  ConnectionSecurity
+//
+//  Created by Aleksei Sapitskii on 12.10.2022.
+//
+
+framework module ConnectionSecurity {
+    header "AuditToken.h"
+    link "ConnectionSecurity"
+    export *
+}

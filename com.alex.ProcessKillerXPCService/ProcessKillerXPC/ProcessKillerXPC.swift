@@ -8,5 +8,5 @@
 import Foundation
 
 @objc(ProcessKillerXPC) protocol ProcessKillerXPC {
-    func kill(withID: Int)
+  func kill(withID: Int)
 }

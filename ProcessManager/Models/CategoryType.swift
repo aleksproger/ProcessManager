@@ -8,5 +8,6 @@
 import Foundation
 
 enum CategoryType: String, CaseIterable {
-  case processes = "Processes"
+  case allProcesses = "All Processes"
+  case userOwnedProcesses = "User Owned Processes"
 }
