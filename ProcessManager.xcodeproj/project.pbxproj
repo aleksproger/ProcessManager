@@ -227,7 +227,7 @@
 		FA97F65328F7755F0071425F /* ProcessListHostProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessListHostProtocol.swift; sourceTree = "<group>"; };
 		FA97F65528F775960071425F /* ProcessListErrorHandlerProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessListErrorHandlerProxy.swift; sourceTree = "<group>"; };
 		FA97F65728F7776D0071425F /* ProcessListHostProtocolImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessListHostProtocolImpl.swift; sourceTree = "<group>"; };
-		FA97F66028F819780071425F /* LibprocPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LibprocPackage; sourceTree = "<group>"; };
+		FA97F66128F81AD30071425F /* LibprocPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LibprocPackage; sourceTree = "<group>"; };
 		FAA067C828F2E62100D16084 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		FAA067CA28F2E66A00D16084 /* ProcessKillerXPCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessKillerXPCDelegate.swift; sourceTree = "<group>"; };
 		FAA067CF28F2E6AF00D16084 /* ProcessKillerXPCImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessKillerXPCImpl.swift; sourceTree = "<group>"; };
@@ -484,7 +484,7 @@
 			children = (
 				FA96997028F54E53002B02B5 /* SignalSenderPackage */,
 				FA22050328F6E4DD000461EB /* ProcessManagerCorePackage */,
-				FA97F66028F819780071425F /* LibprocPackage */,
+				FA97F66128F81AD30071425F /* LibprocPackage */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -646,8 +646,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				FA97F66328F81AEE0071425F /* PBXTargetDependency */,
 				FA97F65A28F777A60071425F /* PBXTargetDependency */,
-				FA650F2E28F34EF90018EB87 /* PBXTargetDependency */,
 				FACBFAD428F34D1500322B4B /* PBXTargetDependency */,
 			);
 			name = ProcessListXPCService;
@@ -950,10 +950,6 @@
 			target = FA22051128F6ECA1000461EB /* ConnectionSecurity */;
 			targetProxy = FA22053228F6EE42000461EB /* PBXContainerItemProxy */;
 		};
-		FA650F2E28F34EF90018EB87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = FA650F2D28F34EF90018EB87 /* Libproc */;
-		};
 		FA96997228F54E73002B02B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = FA96997128F54E73002B02B5 /* SignalSender */;
@@ -980,6 +976,10 @@
 		FA97F65A28F777A60071425F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = FA97F65928F777A60071425F /* ProcessManagerCore */;
+		};
+		FA97F66328F81AEE0071425F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = FA97F66228F81AEE0071425F /* Libproc */;
 		};
 		FACBFA9E28F3349C00322B4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2076,10 +2076,6 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = ProcessManagerCore;
 		};
-		FA650F2D28F34EF90018EB87 /* Libproc */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Libproc;
-		};
 		FA96997128F54E73002B02B5 /* SignalSender */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SignalSender;
@@ -2103,6 +2099,10 @@
 		FA97F65B28F777AC0071425F /* ProcessManagerCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ProcessManagerCore;
+		};
+		FA97F66228F81AEE0071425F /* Libproc */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Libproc;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
